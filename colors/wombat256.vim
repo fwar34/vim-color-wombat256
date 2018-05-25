@@ -62,8 +62,10 @@ hi Todo			ctermfg=245		cterm=none		guifg=#8f8f8f	gui=italic
 "hi cAnsiFunction gui=NONE ctermfg=131
 "hi Function gui=NONE ctermfg=131
 "hi Function gui=NONE guifg=#B5A1FF ctermfg=131
+hi Function gui=NONE guifg=#AF5F5F ctermfg=131
 "hi cFunction gui=NONE ctermfg=131
 "hi cFunction gui=NONE guifg=#B5A1FF ctermfg=131
+hi cFunction gui=NONE guifg=#AF5F5F ctermfg=131
 "hi cUserFunction gui=NONE ctermfg=131
 "hi cppSTLfunction gui=NONE ctermfg=131
 "hi cppSTLfunctional gui=NONE ctermfg=131
