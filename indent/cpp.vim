@@ -61,10 +61,9 @@ function GetJavaIndent()
   " find start of previous line, in case it was a continuation line
   let lnum = SkipJavaBlanksAndComments(v:lnum - 1)
 
-  " If the previous line starts with '@', we should have the same indent as
-  " the previous one
-  "if getline(lnum) =~ '^\s*@.*$'
-  if getline(lnum) =~ '^\s*template\s*.*>$'
+  " If the previous line starts with 'template' and end with '>' we should have the same indent as
+  " the previous one, because template in namespace indent error
+  if getline(lnum) =~ '^\s*template\s*<.*>$'
     return indent(lnum)
   endif
 
